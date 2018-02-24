@@ -1,0 +1,10 @@
+<%= form_for @user do |t| %>
+Name: <%= t.text_field :name, id: "user[name]" %><br>
+Password: <%= t.password_field :password, id: "user[password]" %><br>
+Nausea: <%= t.number_field :nausea, id: "user[nausea]" %><br>
+Happiness: <%= t.number_field :happiness, id: "user[happiness]" %><br>
+Tickets: <%= t.number_field :tickets, id: "user[tickets]" %><br>
+Height: <%= t.number_field :height, id: "user[height]" %><br>
+Admin? <%= t.check_box :admin %><br>
+<%= t.submit %>
+<% end %>

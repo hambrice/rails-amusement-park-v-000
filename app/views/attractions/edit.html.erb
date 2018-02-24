@@ -1,0 +1,8 @@
+<%= form_for @attraction do |t| %>
+Name: <%= t.text_field :name, id: "attraction[name]" %><br>
+Nausea: <%= t.number_field :nausea_rating, id: "attraction[nausea_rating]" %><br>
+Happiness: <%= t.number_field :happiness_rating, id: "attraction[happiness_rating]" %><br>
+Tickets: <%= t.number_field :tickets, id: "attraction[tickets]" %><br>
+Height: <%= t.number_field :min_height, id: "attraction[min_height]" %><br>
+<%= t.submit %>
+<%end %>
